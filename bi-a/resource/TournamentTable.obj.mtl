@@ -1,0 +1,127 @@
+# File produced by Open Asset Import Library (http://www.assimp.sf.net)
+# (assimp v3.1.187496374)
+
+
+newmtl Beize
+
+Kd 1 1 1
+
+Ks 1 1 1
+
+Ke 0 0 0
+
+d 1
+
+illum 1
+
+map_Kd TournamentTable/beizetopPT_Tourna.bmp
+
+
+newmtl BeizeCushions
+
+Kd 0.784314 0.784314 0.784314
+
+Ks 1 1 1
+
+Ke 0 0 0
+
+d 1
+
+illum 1
+
+map_Kd TournamentTable/bcushPT_Tourna.bmp
+
+
+newmtl BeizeSides
+
+Kd 0.901961 0.901961 0.901961
+
+Ks 1 1 1
+
+Ke 0 0 0
+
+d 1
+
+illum 1
+
+map_Kd TournamentTable/beizetopPT_Tourna.bmp
+
+
+newmtl Black
+
+Kd 0.784314 0.784314 0.784314
+
+Ks 1 1 1
+
+Ke 0 0 0
+
+d 1
+
+illum 1
+
+map_Kd TournamentTable/black.bmp
+
+
+newmtl DlinePool
+
+Kd 0.784314 0.784314 0.784314
+
+Ks 1 1 1
+
+Ke 0 0 0
+
+d 1
+
+illum 1
+
+map_Kd TournamentTable/dline.bmp
+
+
+newmtl MetalFrame
+
+Kd 0.784314 0.784314 0.784314
+
+Ks 1 1 1
+
+Ke 0 0 0
+
+d 1
+
+Ns 36
+
+illum 2
+
+map_Kd TournamentTable/Metal.bmp
+
+
+newmtl PocketBlack
+
+Kd 0.12549 0.12549 0.12549
+
+Ks 1 1 1
+
+Ke 0 0 0
+
+d 1
+
+illum 1
+
+map_Kd TournamentTable/PocketBlack.bmp
+
+
+newmtl TableWood
+
+Kd 0.784314 0.784314 0.784314
+
+Ks 1 1 1
+
+Ke 0 0 0
+
+d 1
+
+Ns 36
+
+illum 2
+
+map_Kd TournamentTable/Wood.bmp
+
