@@ -27,8 +27,9 @@ const GLuint WIDTH = 800, HEIGHT = 600;
 
 
 
-#define TABLE "resource/TournamentTable.obj"
+//#define TABLE "resource/TournamentTable.obj"
 //#define TABLE "resource/table2/Snooker_Table.obj"
+#define TABLE "resource/Pool/pool-table.obj"
 #define BALL "resource/Balls/Ball_"
 #define NUM_OF_BALL 2
 //#define PATH "resource/Balls/Ball_1.obj"
@@ -58,7 +59,7 @@ void readPosition()
 	FILE *stream;
 	freopen_s( &stream,"resource/position.txt", "r", stdin);
 	GLfloat x, y, z;
-	for (int i = 1; i <= NUM_OF_BALL; i++)
+	for (int i = 0; i <= NUM_OF_BALL; i++)
 	{
 		fscanf_s(stream, "%f %f %f", &x, &y, &z);
 		position[i].x = x;
@@ -79,7 +80,7 @@ void init()
 		string ballPath = BALL + findBallPath(i);
 		ball[i].loadModel(ballPath);
 	}
-	position[0].x = position[0].y = position[0].z = 0;
+	//position[0] = glm::vec3(0.0f, -0.5f, )
 	shader = new Shader("resource/shader.vertex", "resource/shader.fragment");
 }
 
@@ -100,7 +101,7 @@ void draw(Model *activeModel, int pos)
 	}
 	else
 	{
-	//	model = glm::scale(model, glm::vec3(0.005f, 0.005f, 0.005f));	// It's a bit too big for our scene, so scale it down
+		model = glm::scale(model, glm::vec3(0.05f, 0.05f, 0.05f));	// It's a bit too big for our scene, so scale it down
 	}
 	glUniformMatrix4fv(glGetUniformLocation(shader->Program, "model"), 1, GL_FALSE, glm::value_ptr(model));
 
